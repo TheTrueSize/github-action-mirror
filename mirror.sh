@@ -30,6 +30,7 @@ mirror() {
 
   ${git} clone --mirror "${SOURCE}" '/root/git/source' \
     && _pushd '/root/git/source' || exit 1
+  echo "Clone completed"
   ${git} remote add 'target' "${TARGET}"
   ${git} push -f --mirror 'target'
   _popd || exit 1

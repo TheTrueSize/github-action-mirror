@@ -9,6 +9,6 @@ LABEL "homepage"="http://pkgstore.github.io/"
 COPY *.sh /
 RUN apk add --no-cache bash git git-lfs
 
-RUN git config --global http.postBuffer 148805549
+RUN git config --global http.postBuffer 308805549
 
 ENTRYPOINT ["/entrypoint.sh"]
